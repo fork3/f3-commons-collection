@@ -19,7 +19,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author emma
+ * @author n3k0nation
  *
  */
 public class HistoryMultiValueSet<T> extends MultiValueSet<T> {

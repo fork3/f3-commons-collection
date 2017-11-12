@@ -30,7 +30,7 @@ import java.util.function.Predicate;
  * 
  * Запрещено менять значения в небезопасном массиве.
  * 
- * @author PointerRage
+ * @author n3k0nation
  * 
  */
 public class UnsafeCopyOnWriteArraySet<E> extends AbstractSet<E> {

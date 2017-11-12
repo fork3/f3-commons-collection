@@ -40,7 +40,7 @@ import java.util.function.UnaryOperator;
  * 
  * Запрещено менять значения в небезопасном массиве.
  * 
- * @author PointerRage
+ * @author n3k0nation
  * 
  */
 public class UnsafeCopyOnWriteArrayList<E> implements List<E>, RandomAccess, Cloneable {

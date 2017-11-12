@@ -16,7 +16,7 @@
 package f3.commons.collection;
 
 /**
- * @author PointerRage
+ * @author n3k0nation
  *
  */
 public interface IMultiValue<K> {
