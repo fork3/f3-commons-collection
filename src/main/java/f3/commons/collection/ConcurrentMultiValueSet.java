@@ -15,7 +15,7 @@ import lombok.Setter;
 public class ConcurrentMultiValueSet<T> extends ConcurrentHashMap<T, Object> implements IMultiValue<T> {
 	private static final long serialVersionUID = -306613895895969833L;
 
-	@Getter @Setter private boolean replaceStringValue;
+	@Getter @Setter private transient boolean replaceStringValue;
 	public ConcurrentMultiValueSet() {
 		super();
 	}

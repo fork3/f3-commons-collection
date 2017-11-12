@@ -15,13 +15,13 @@ import lombok.Setter;
 public class MultiValueSet<T> extends HashMap<T, Object> implements IMultiValue<T> {
 	private static final long serialVersionUID = 8071544899414292397L;
 	
-	public final static MultiValueSet<?> EMPTY = new MultiValueSet<>();
+	public final static transient MultiValueSet<?> EMPTY = new MultiValueSet<>();
 	@SuppressWarnings("unchecked")
 	public static <T> MultiValueSet<T> getEmpty() {
 		return (MultiValueSet<T>) EMPTY;
 	}
 	
-	@Getter @Setter private boolean replaceStringValue;
+	@Getter @Setter private transient boolean replaceStringValue;
 	public MultiValueSet() {
 		super();
 	}

@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  */
 public class ConcurrentHashSet<T> implements Set<T> {
-	private final static Object value = new Object();
+	private final static transient Object value = new Object();
 	private final Map<T, Object> set;
 	
 	public ConcurrentHashSet() {
